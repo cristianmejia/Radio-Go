@@ -4,7 +4,9 @@ Template.record.onCreated(function() {
   $.getScript("https://webrtcexperiment-webrtc.netdna-ssl.com/getScreenId.js");
 });
 
-// view-source:https://www.webrtc-experiment.com/RecordRTC/
+// RecordRTC
+// docs:     http://recordrtc.org/
+// example:  https://www.webrtc-experiment.com/RecordRTC/
 Template.record.onRendered(function () {
 
   var params = {},
