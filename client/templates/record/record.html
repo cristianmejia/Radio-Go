@@ -1,0 +1,51 @@
+<template name="record">
+  <h2 class="header">
+      Record Audio ( <a href="http://recordrtc.org/" title="API Documentation">RecordRTC.org</a> )
+  </h2>
+
+  <div class="inner" style="height: 5em;">
+      <audio id="audio" autoplay controls></audio>
+      <button id="record-audio">Record</button>
+      <button id="pause-resume-audio" disabled>Pause</button>
+      <button id="stop-recording-audio" disabled>Stop</button>
+      <h2 id="audio-url-preview"></h2>
+  </div>
+
+  <h2 class="header">Record Video (in chrome)</h2>
+
+    <small>/ <a href="https://www.webrtc-experiment.com/RecordRTC/AudioVideo-on-Firefox.html">Record video on Firefox</a>
+    </small>
+
+    <div class="inner">
+        <button style="float: right;" id="fit-to-screen">Fit to Screen!</button>
+        <label for="canvas-width-input">Canvas Width</label>
+        <input type="text" id="canvas-width-input" value="320">
+        <br />
+        <label for="canvas-height-input">Canvas Height</label>
+        <input type="text" id="canvas-height-input" value="240">
+        <br />
+        <div>
+            <button id="record-video">Record</button>
+            <button id="pause-resume-video" disabled>Pause</button>
+            <button id="stop-recording-video" disabled>Stop</button>
+            <hr>
+            <h2 id="video-url-preview"></h2>
+            <br>
+            <input type="checkbox" id="record-screen" style="width:auto;">
+            <label for="record-screen">Record Screen</label>
+            <br>
+            <video id="video" autoplay loop controls muted></video>
+        </div>
+    </div>
+
+    <h2 class="header">Record video as animated gif image (both Chrome/Firefox):</h2>
+
+    <div class="inner">
+        <button id="record-gif">
+            Record</button>
+        <button id="pause-resume-gif" disabled>Pause</button>
+        <button id="stop-recording-gif" disabled>
+            Stop</button>
+    </div>
+
+</template>
